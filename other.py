@@ -10,5 +10,5 @@ def add_func(a, b):
 
 res = add_func(4, 5)
 print(res)
-
+print(2*res)
 
