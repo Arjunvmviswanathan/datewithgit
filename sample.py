@@ -1,3 +1,4 @@
+from functools import reduce
 def prime_gen():
     num = 2
     while True:
@@ -17,4 +18,5 @@ for i in range(20):
     res.append(next(gen))
 
 res_map = list(map(lambda x: x ** 2, res))
-print(res_map)
+sum_res_map = reduce(lambda a,b:a+b, res_map)
+print(sum_res_map)
