@@ -28,3 +28,6 @@ print(y)
 x = [i for i in range(1,200) if all(i%j != 0 for j in range(2,i))]
 print(x)
 
+z = {x:x**2 for x in range(20)}
+print(z)
+
